@@ -1,1 +1,65 @@
-Hello, wolrd
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>Random Alarm - About</title>
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<!-- <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>  -->
+	<script type="text/javascript">
+	$(function(){
+		$('#content').fadeIn({
+			'duration': 800,
+			'queue': false
+		}).animate({
+			marginTop : '-=10'
+		}, 800);
+
+	});
+	</script>		
+	<link rel="stylesheet" type="text/css" href="kube.min.css">
+	<!-- <link rel="shortcut icon" href=""> -->
+
+	<style type="text/css">
+	body {
+		background: #ecf0f1;
+		border-top: 10px solid #2c3e50;
+		text-align: center;
+	}
+	#icon-img {
+		border-radius: 26px;
+	}
+	#content {
+		padding-top: 100px;
+		display: none;
+	}
+	#title {
+		margin-top: 20px;
+	}
+	</style>
+</head>
+
+<body>
+	<div id="content">
+		<img id="icon-img" src="app-icon.png" width="160" />
+		<div id="title">
+			<h1>Random Alarm</h1>
+		</div>
+
+		<div id="description">
+		<p class="lead">
+		Random Alarm は鳴るかどうかわからない目覚まし時計アプリです。<br>
+		鳴るかどうかがわからない緊張感によって、自発的な起床が期待できるかもしれません。<br><br>
+		■免責事項<br>
+		当アプリのアラームが鳴らなかった事によって生じたいかなる損失に対しても当方では一切責任を負う事ができないのでご了承ください。
+		</p>
+		</div>
+
+		<br>
+
+		<p>contact: cm.forest26[at]gmail.com</p>
+	</div>
+
+</body>
+
+</html>
