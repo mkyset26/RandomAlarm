@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="apple-itunes-app" content="app-id=908065860">
 	<title>Random Alarm - About</title>
 
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -17,6 +18,15 @@
 		}, 800);
 
 	});
+
+	function showJP(){
+		$('.langJP').show();
+		$('.langEN').hide();	
+	}
+	function showEN(){
+		$('.langEN').show();
+		$('.langJP').hide();
+	}
 	</script>		
 	<link rel="stylesheet" type="text/css" href="kube.min.css">
 	<!-- <link rel="shortcut icon" href=""> -->
@@ -31,29 +41,44 @@
 		border-radius: 26px;
 	}
 	#content {
-		padding: 100px 50px;
+		padding: 100px 40px;
 		display: none;
 	}
 	#title {
 		margin-top: 20px;
 	}
+
+	.langEN { display: none; }
 	</style>
 </head>
 
 <body>
 	<div id="content">
-		<img id="icon-img" src="app-icon.png" width="160" />
+		<a href="https://itunes.apple.com/app/random-alarm-clock/id908065860"><img id="icon-img" src="app-icon.png" width="160" /></a>
 		<div id="title">
-			<h1>Random Alarm</h1>
+			<h1>Random Alarm Clock</h1>
 		</div>
 
-		<div id="description">
-		<p class="lead">
-		Random Alarm は鳴るかどうかわからない目覚まし時計アプリです。<br>
-		鳴るかどうかがわからない緊張感によって、自発的な起床が期待できるかもしれません。<br><br>
-		■免責事項<br>
-		当アプリのアラームが鳴らなかった事によって生じたいかなる損失に対しても当方では一切責任を負う事ができないのでご了承ください。
-		</p>
+		<p class="langJP">日本語 | <a href="#en" onclick="showEN(); return false;">English</a></p>
+		
+		<p class="langEN"><a href="#jp" onclick="showJP(); return false;">日本語</a> | English</p>
+
+		<div class="description langJP">
+			<p class="lead">
+			Random Alarm Clock は鳴るかどうかわからない目覚まし時計アプリです。<br>
+			鳴るかどうかがわからない緊張感によって、自発的な起床が期待できるかもしれません。<br><br>
+			■免責事項<br>
+			当アプリのアラームが鳴らなかった事によって生じたいかなる損失に対しても当方では一切責任を負う事ができないのでご了承ください。
+			</p>
+		</div>
+
+		<div class="description langEN">
+			<p class="lead">
+			"Random Alarm Clock" is an alarm clock which is not sure whether go off.<br><br>
+
+			■General disclaimer<br>
+			We will not accept any liability in respect of damages incurred by an alarm not going off.
+			</p>
 		</div>
 
 		<br>
